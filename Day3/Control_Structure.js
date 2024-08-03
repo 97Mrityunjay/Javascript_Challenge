@@ -77,3 +77,43 @@ switch (day_of_week) {
         console.log("Invalid day of week");
         break;
 }
+//5.Write a program that uses a switch case to assign a grade('A','B','C','D','F') based on a score and log the grade to the console.
+ let score = 95;
+ switch (true) {
+    case score>=80:
+             console.log("A Grade");
+             break;
+    
+    case score>=60 && score<80:
+            console.log("B Grade");
+            break;
+    case score>=50 && score<60:
+            console.log("C Grade");
+            break;
+    case score>=40 && score<50:
+           console.log("D Grade");
+           break;
+    default:
+         console.log("F Grade");
+        break;
+ }
+
+ /* Conditional(Ternary) Operator */
+ //6. Write a program that uses the ternary operator to check if a number is even or odd and log the result to console.
+ let num2 = 60;
+ (num2 % 2 === 0) ? console.log(`${num2} is an even number`) : console.log(`${num2} is an odd number`);
+
+ /* Combining Conditions: */
+ //7. Write a program to check if a year is a leap year using multiple conditions(divisible by 4, but not 100 unless also divisible by 400) and log the result to the console.
+ let year = 2004;
+if(year%100!==0 && year % 4 === 0)
+{
+    console.log(`${year} is a leap year`);
+}
+else if(year % 100 === 0 && year % 400 === 0)
+{
+    console.log(`${year} is a leap year`);
+}
+else{
+    console.log(`${year} is not a leap year`);
+}
